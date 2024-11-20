@@ -14,6 +14,8 @@
   <meta property="og:description" content="Put in something later">
   <meta property="og:image" content="image.png"> All of these tags are for social media embeds, to make site information automantically pop up when the link is pasted. Nice, but 
   not a high priority right now.
+  p{
+	color: #2E8B57; Saved from CSS page
   -->
   <!--
   <link rel="icon" href="/favicon.ico">
@@ -22,12 +24,58 @@
   <link rel="stylesheet" href="styles.css"> All this code will display the icon in the tab. .ico is used for legacy browsers, .svg for modern and apple for when someone adds
   the website to a Safari homepage.
   -->
-  <link rel="stylesheet" href="css/styles.css?v=1.0"> <!--Links to the stylesheet. The v and number is used to update the CSS on each page refresh so that it stays up to date 
+  
+ <!-- MaxCDN Bootstrap Import -->
+
+  
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+<!-- Personal Stylesheet Import -->
+  
+	<link rel="stylesheet" href="styles.css"> <!--Links to the stylesheet. The v and number is used to update the CSS on each page refresh so that it stays up to date 
   with the stylesheet file-->
 </head>
 
 <body>
-  <h1>Page Title</h1>
+<!-- Header/nav bar -->
+	<div class="navi">
+		<P>Test Text 1</p>
+	</div>
+<!-- Banner, maybe turn into slideshow past MVP stage? Note to self: Make placeholder image-->
+	<div class="banner">
+		<img src="placeholder.jpg" style="width:100%">
+		<P>Test Text 2</p>
+	</div>
+<!-- Title of page-->
+	<div class="pagehead">
+		<P>Test Text 3</p>
+	</div>
+
+<!-- Bootstrap Test ONLY-->	
+	<div class="container">
+		<h1>My First Bootstrap Page</h1>
+		<p>This is some text.</p>
+	</div>
+	
+<!-- For overalal body style decisions that are the same across the alternating color sections, we'll nest those inside a seperate div-->
+	<div class="Mainpage">
+	<!-- Section type 1, due to switching between purple and white sections for the body we'll need two sets of css code-->
+		<div class="whitebox">
+		</div>
+	<!-- Section type 2-->
+		<div class="purplebox">
+		</div>
+	</div>
+<!-- Footer-->
+	<div class="footer">
+	</div>
 </body>
 
 </html>
