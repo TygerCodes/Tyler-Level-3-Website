@@ -55,17 +55,17 @@
 				<div class="container-fluid"> <!-- Responsible for resizing elements for the website to work on multiple screens-->
 					<div class="navbar-header navi"> <!-- The "title" of the navbar. Probably not always needed-->
 					<!-- Below: Creates a button that collpases the navbar and expands again when on a small screen-->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- Makes button to let the bar collapse on mobile-->
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand navi" href="#">WebSiteName</a>
+						<a class="navbar-brand navi" href="#">WebSiteName</a> <!-- Title of the website-->
 					</div>
 					<!-- Below: Compiles the list of webpage names to click on-->
-					<div class="collapse navbar-collapse" id="myNavbar">
+					<div class="collapse navbar-collapse" id="myNavbar"> <!-- Controls which bit collapses-->
 					  <ul class="nav navbar-nav">
-						<li class="active"><a class="navi" href="#">Home</a></li>
+						<li class="active"><a class="navi" href="#">Home</a></li> <!-- For the page you're on-->
 						<li><a class="navi" href="#">Newsletter</a></li>
 						<li><a class="navi" href="#">About Us</a></li>
 						<li><a class="navi" href="#">Platforms</a></li>
@@ -85,35 +85,44 @@
 			</div>
 		</div>
 	<!-- Title of page-->
-		<div class="pagehead">
+		<div class="pagehead"> <!-- Meant for page titles on sections without banners.-->
 		</div>
 		
 	<!-- For overall body style decisions that are the same across the alternating color sections, we'll nest those inside a seperate div-->
 		<div class="Mainpage">
 		<!-- Section type 1, due to switching between purple and white sections for the body we'll need two sets of css code-->
-			<div class="whitebox">
+			<div class="pagebox leftbox">
 				<div class="row">
-					<div class="container-fluid">
-						<div class="jumbotron">
+						<div class="container-fluid">
 							<div class="col-sm-5">
 								<p class="BoxTitle">White Box 1</p>     
 							</div>
 							<div class="col-sm-7">
-								<p>I need to seriously make an image to nest in here.</p>
+								<p class="BoxText">I need to seriously make an image to nest in here.</p>
 							</div>
 						</div>
-					</div>
 				</div> 
 			</div>
 		<!-- Section type 2-->
-			<div class="purplebox">
+			<div class="pagebox rightbox">
+				<div class="row">
+						<div class="container-fluid">
+							<div class="col-sm-7">
+								<p class="BoxText">I need to seriously make an image to nest in here.</p>
+							</div>
+							<div class="col-sm-5">
+								<p class="BoxTitle">Purple Box 1</p>     
+							</div>
+						</div>
+				</div> 
 			</div>
 		</div>
 	<!-- Footer-->
-		<div class="footer">
+		<div class="footer"> <!-- Classifies bottom of page-->
 			<div class="row">
-					<div class="col-sm-3">.col-sm-31</div>
-					<div class="col-sm-3">.col-sm-32</div>
+					<div class="col-sm-3"><p class="footerText">Privacy Policy</p></div>
+					<div class="col-sm-3"><p class="footerText">Contact Us</p></div>
+					<div class="col-sm-6"><p class="footerText">Copyright Nonsense</p></div> <!-- This one spans father in case I need a mini paragraph here -->
 			</div> 
 		</div>
 		

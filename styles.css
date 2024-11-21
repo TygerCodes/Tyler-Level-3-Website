@@ -1,3 +1,12 @@
+:root {
+  --blue: #0066b2;
+  --lightblue: #6cb4ee;
+  --red: #b31b1b;
+  --white: #ffffff;
+  --darkgrey: #808080;
+  --bluegrey: #6082B6;
+}
+
 
 .navi{
 	color: #FFFFFF;
@@ -5,21 +14,53 @@
 }
 
  a:hover {
-	background-color: white;
+	background-color: var(--white);
+	color: var(--black);
 } 
 
 .navbar{
-	background-color: #9176a1;
+	background-color: var(--red);
+	margin-bottom: 0px;
 }
 
 .banner{
-	background-color: #808080;
+	background-color: var(--bluegrey);
 }
 
 .pagehead{
 }
 
+.pagebox{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.BoxTitle{
+	font-size: 2.5em;
+	padding: 200px;
+}
+
 .BoxText{
-	size: 24px;
+	font-size: 1.5em;
+	padding: 200px;
+}
+
+.leftbox{
+	background-color: var(--lightblue);
+	color: var(--white);
+}
+
+.rightbox{
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.footer{
+	background-color: var(--red);
+	color: white;
 	padding: 50px;
+}
+
+.footerText{
+	
 }
