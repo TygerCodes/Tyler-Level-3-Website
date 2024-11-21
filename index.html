@@ -76,7 +76,7 @@
 		
 	<!-- Banner, maybe turn into slideshow past MVP stage? Note to self: Make placeholder image-->
 	
-		<div class="banner"> <!-- My banner class in case more jumbotrons are needed ad I want to differenciate-->
+		<div class="banner"> <!-- My banner class is needed for elements like the background that sits behind the jumbotron.-->
 			<div class="container"> <!-- Keeps the jumbotron floating in the middle-->
 				<div class="jumbotron"> <!-- The jumbotron itself. Anything outside of this but in the container will stick to the side. -->
 					<h1>Webpage Banner</h1>      
@@ -93,8 +93,16 @@
 		<!-- Section type 1, due to switching between purple and white sections for the body we'll need two sets of css code-->
 			<div class="whitebox">
 				<div class="row">
-					<div class="col-sm-4">.col-sm-4</div>
-					<div class="col-sm-8">.col-sm-8</div>
+					<div class="container-fluid">
+						<div class="jumbotron">
+							<div class="col-sm-5">
+								<p class="BoxTitle">White Box 1</p>     
+							</div>
+							<div class="col-sm-7">
+								<p>I need to seriously make an image to nest in here.</p>
+							</div>
+						</div>
+					</div>
 				</div> 
 			</div>
 		<!-- Section type 2-->

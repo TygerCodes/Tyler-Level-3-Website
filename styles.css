@@ -1,15 +1,25 @@
 
 .navi{
 	color: #FFFFFF;
+	
 }
+
+ a:hover {
+	background-color: white;
+} 
 
 .navbar{
 	background-color: #9176a1;
 }
 
 .banner{
+	background-color: #808080;
 }
 
 .pagehead{
 }
 
+.BoxText{
+	size: 24px;
+	padding: 50px;
+}
