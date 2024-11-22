@@ -50,14 +50,32 @@
 	margin-top: 0px;
 }
 
+.pageimg{
+	height: 300px;
+	padding: 20px;
+}
+
+.leftImg{
+	padding-left: 60px;
+}
+
+.rightImg{
+	padding-right: 60px;
+}
+
 .BoxTitle{
 	font-size: 2.5em;
-	padding: 200px;
+	padding-top: 50px;
 }
 
 .BoxText{
 	font-size: 1.5em;
-	padding: 200px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.leftText{
+	padding-right: 20px;
 }
 
 .leftbox{
@@ -69,6 +87,11 @@
 	background-color: var(--blue);
 	color: var(--white);
 }
+
+.rightText{
+	padding-left: 20px;
+}
+
 
 .footer{
 	background-color: var(--bluegrey);
