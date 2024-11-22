@@ -8,7 +8,7 @@
 
 		<meta charset="utf-8"> <!-- Allows most characters to be used on the website -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Makes the website mobile safe -->
-		<title>Taka-HEY!</title>
+		<title>Taka-HEY Newsletter</title>
 		<meta name="description" content="Upcoming game for PC and console. Learn more and sign up for development news"> <!-- For search engine purposes -->
 		<meta name="author" content="Tyler Bertenshaw"> <!-- Means that searches for me will bring up website -->
 		  <!--
@@ -65,8 +65,8 @@
 					<!-- Below: Compiles the list of webpage names to click on-->
 					<div class="collapse navbar-collapse" id="myNavbar"> <!-- Controls which bit collapses-->
 					  <ul class="nav navbar-nav">
-						<li class="active"><a class="navi" href="#">Home</a></li> <!-- For the page you're on-->
-						<li><a class="navi" href="sign_up.html">Newsletter</a></li>
+						<li><a class="navi" href="index.html">Home</a></li> <!-- For the page you're on-->
+						<li class="active"><a class="navi" href="#">Newsletter</a></li>
 						<li><a class="navi" href="#">About Us</a></li>
 						<li><a class="navi" href="#">Platforms</a></li>
 					  </ul>
@@ -78,7 +78,7 @@
 	
 		<div class="banner"> <!-- My banner class is needed for elements like the background that sits behind the jumbotron.-->
 			<div class="container"> <!-- Keeps the jumbotron floating in the middle-->
-				<img src="ConceptBanner1.png">	      
+				<h1 class="bannest">Sign Up For Free News On Our Games.</h1>
 			</div>
 		</div>
 	<!-- Title of page-->
@@ -88,34 +88,20 @@
 	<!-- For overall body style decisions that are the same across the alternating color sections, we'll nest those inside a seperate div-->
 		<div class="Mainpage">
 		<!-- Section type 1, due to switching between purple and white sections for the body we'll need two sets of css code-->
-			<div class="pagebox leftbox">
-				<div class="row">
-						<div class="container-fluid">
-							<div class="col-sm-5">
-								 <img class="pageimg leftImg" src="ConIm2.png">    
-							</div>
-							<div class="col-sm-7">
-								<p class="BoxTitle">Introducing Out Of Your Minds, our first game!</p>
-								<p class="BoxText leftText">This brand-new original adventure RPG lets you fight with hands, tools - or your words. </br>
-								Meaningful decisions and intuitive controls bring the story and characters to life.</p>
-							</div>
-						</div>
-				</div> 
+			<form>
+			<div class="container">
+				<fieldset>
+					<legend>Sign up for exclusive newsletter:</legend>
+					<label for="nemail">Email to send newsletter to:</label> </br>
+					<input type="text" id="nemail" name="nemail"  maxlength="255" placeholder="i.e name@domain.com"> </br>
+					<label for="ninja">I want to recieve the newsletter in Japanese:</label> 
+					<input type="checkbox" id="ninja" name="ninja"> </br>
+					<label for="kicker">I want to recieve updates on Kickstarter backer perks:</label> 
+					<input type="checkbox" id="kicker" name="kicker"> </br>
+					<button type="button" onclick="alert('Hello World!')">Submit</button> 
+				</fieldset>
 			</div>
-		<!-- Section type 2-->
-			<div class="pagebox rightbox">
-				<div class="row">
-						<div class="container-fluid">
-							<div class="col-sm-7">
-								<p class="BoxTitle rightText">Watch the trailer!</p>
-								<p class="BoxText rightText">As seen at the Game Awards.</p>
-							</div>
-							<div class="col-sm-5">
-								  <img class="pageimg rightImg" src="YouTube_Placeholder.png">    
-							</div>
-						</div>
-				</div> 
-			</div>
+			</form>
 		</div>
 	<!-- Footer-->
 		<div class="footer"> <!-- Classifies bottom of page-->
