@@ -44,6 +44,17 @@
 	<!-- Personal Stylesheet Import -->
 	  
 		<link rel="stylesheet" href="styles.css"> 
+
+	<!-- PHP Session Start -->
+	
+		<?php 
+			//Start session, connect
+			session_start();
+			include"conn.php";
+		?>
+		
+	<!-- PHP Data Upload -->
+		
 		
 	</head>
 
@@ -88,17 +99,21 @@
 	<!-- For overall body style decisions that are the same across the alternating color sections, we'll nest those inside a seperate div-->
 		<div class="Mainpage">
 		<!-- Section type 1, due to switching between purple and white sections for the body we'll need two sets of css code-->
-			<form>
+			<form method="post" action="Form2.php">
 			<div class="container">
 				<fieldset>
 					<legend>Sign up for exclusive newsletter:</legend>
-					<label for="nemail">Email to send newsletter to:</label> </br>
-					<input type="text" id="nemail" name="nemail"  maxlength="255" placeholder="i.e name@domain.com"> </br>
-					<label for="ninja">I want to recieve the newsletter in Japanese:</label> 
-					<input type="checkbox" id="ninja" name="ninja"> </br>
-					<label for="kicker">I want to recieve updates on Kickstarter backer perks:</label> 
-					<input type="checkbox" id="kicker" name="kicker"> </br>
-					<button type="button" onclick="alert('Hello World!')">Submit</button> 
+					<label for="email">Email to send newsletter to:</label> </br>
+					<input type="text" id="Email" name="Email"  maxlength="255" placeholder="i.e name@domain.com"> </br>
+					
+					<label for="IsJapanese">I want to recieve the newsletter in Japanese:</label> 
+					<input type="checkbox" id="IsJapanese" name="IsJapanese"> </br>
+					
+					<label for="IsBacker">I want to recieve updates on Kickstarter backer perks:</label> 
+					<input type="checkbox" id="IsBacker" name="IsBacker"> </br>
+					
+					<input name="Register" type="submit" id="Register" value="Register" onclick="alert('Hello World!')">
+					 
 				</fieldset>
 			</div>
 			</form>
